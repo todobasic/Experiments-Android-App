@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pendulum">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPendulum"
+        android:layout_width="wrap_content"
+        android:layout_height="171dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="5dp" />
+
+    <EditText
+        android:id="@+id/custom_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="97dp"
+        android:layout_toEndOf="@+id/time_text"
+        android:layout_toRightOf="@id/time_text"
+        android:textSize="10sp"
+        android:inputType="numberDecimal|numberSigned"/>
+
+    <TextView
+        android:id="@+id/acceleroValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50sp"
+        android:textSize="20dp"
+
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="125dp">
+
+
+        <TextView
+            android:id="@+id/textangles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="137dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="startlisting"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="137dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="export"
+        android:text="SAVE" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="97dp"
+        android:text="Time:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/maxAn_tv"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="85dp"
+        android:text="Theta: "
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
